@@ -184,7 +184,7 @@ export function NsDataGridServer<RowType extends object, FilterType extends obje
                 setRowSelection({ [firstRowId]: true });
             }
         });
-    }, [pagination, sorting, filters, fetcher]);
+    }, [pagination, sorting, fetcher]);
 
     // Reset pagination on filter change
     React.useEffect(() => {
@@ -192,6 +192,7 @@ export function NsDataGridServer<RowType extends object, FilterType extends obje
             console.debug('Filter change', filters);
             console.debug('Resetting pagination');
         }
+        // The pagination change will already trigger a refetch, so we don't need to refetch here
         setPagination({
             ...pagination,
             pageIndex: DEFAULT_PAGE_INDEX,

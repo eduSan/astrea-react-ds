@@ -14,7 +14,7 @@ export { NsTabs } from './components/components/tabs/NsTabs';
 export { NsPanel } from './components/components/panel/NsPanel';
 export { NsAccordion, NsAccordionDetails } from './components/components/NsAccordion';
 export { NsProgress } from './components/components/NsProgress';
-export { NsPageHeader } from './components/components/pageHeader/NsPageHeader';
+export { NsPageHeader } from './components/components/PageHeader/NsPageHeader';
 export { NsModal } from './components/components/modals/NsModal';
 export { NsDrawer } from './components/components/drawer/NsDrawer';
 export { NsSidebar } from './components/components/sidebar/NsSidebar';
